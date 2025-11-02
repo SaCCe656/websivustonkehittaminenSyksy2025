@@ -1,50 +1,56 @@
 Moduuli 1 työpajatehtävät
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
-    <title>Omat verkkarisivut</title>
+    <meta charset="UTF-8">
+    <title>Omat verkkosivut</title>
 </head>
 <body>
     <h1>Samun verkkosivut</h1>
-    <p>Thervetuloa</p>
+    <p>Tervetuloa</p>
 
-    <img src="/Users/samuasplund/Documents/Projektit/websivuston_kehittaminen_Syksy_2025/WS01_HTML/IMG_0119.JPG" 
+    <img src="IMG_0119.JPG" 
          alt="kuva samusta" 
          style="width: 400px; height: 400px;">
-</body>
-<h2>Lempi urheilulajit</h2>
+
+    <h2>Lempi urheilulajit</h2>
     <ol>
         <li>Jääkiekko</li>
         <li>Jalkapallo</li>
-        <li>100M aidat</li>
-         <p style="margin-bottom: 30px;"></p>
-        <a href="https://www.laurea.fi">Laurean verkkosivut</a>
-         <p style="margin-bottom: 30px;"></p>
-    <table>
-    <tr>
-        <th>Kurssit</th>
-        <th>Päivä</th>
-    </tr>
-    <tr>
-        <td>websivuston kehittäminen</td>
-        <td> Maanantai</td>
-    </tr>
-    <tr>
-        <td>Professional communication in English,</td>
-        <td>Perjantai</td>
-    </tr>
+        <li>100 m aidat</li>
+    </ol>
+
+    <p style="margin-bottom: 30px;"></p>
+    <a href="https://www.laurea.fi">Laurean verkkosivut</a>
+
+    <p style="margin-bottom: 30px;"></p>
+
+    <table border="1">
+        <tr>
+            <th>Kurssit</th>
+            <th>Päivä</th>
+        </tr>
+        <tr>
+            <td>Websivuston kehittäminen</td>
+            <td>Maanantai</td>
+        </tr>
+        <tr>
+            <td>Professional communication in English</td>
+            <td>Perjantai</td>
+        </tr>
     </table>
+
     <form>
         <p style="margin-bottom: 30px;"></p>
-<p>Kysely:</p>
+        <p>Kysely:</p>
 
+        <label for="seura1">Lempi jalkapalloseura:</label>
+        <input type="text" id="seura1" name="seura1"><br><br>
 
-    <label for="seura1">Lempi jalkapalloseura:</label>
-    <input type="text" id="seura1" name="seura1"><br><br>
-    <label for="seura2">Lempi jääkiekkoseura:</label>
-    <input type="seura2" id="seura2" name="seura2"><br><br>
-    <input type="submit" value="Lähetä">
+        <label for="seura2">Lempi jääkiekkoseura:</label>
+        <input type="text" id="seura2" name="seura2"><br><br>
+
+        <input type="submit" value="Lähetä">
     </form>
-    </ol>
+</body>
 </html>
-
