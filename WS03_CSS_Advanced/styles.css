@@ -109,7 +109,6 @@ table {
         padding-left: 20px;
         font-style: italic;
         color: rgb(189, 59, 33);
-        text font-weight: bold;
       }
       
       .quote::before {
