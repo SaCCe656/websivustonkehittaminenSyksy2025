@@ -1,0 +1,59 @@
+p {
+      color: rgb(189, 59, 33);
+      font-size: 25px;
+      font-weight: bold;
+    }
+    img {
+      border: 2cap solid rgb(255, 255, 255);
+    }
+ body {
+      background-color: rgb(225, 193, 193);
+    }
+    div {
+      padding: 10px;
+      margin: 10px;;
+    }
+h1 {
+      color: rgb(201, 137, 34);
+      font-weight: bold;
+    }
+    table, th, td { border: 1px solid black; }
+table {
+      width: 25%;
+      border-collapse: colla  
+    }
+      th {
+      background-color: rgb(201, 137, 34);
+    }
+    td {
+      text-align: center;
+      background-color: rgb(189, 59, 33);
+    }
+    form {
+      background-color: rgb(201, 137, 34);
+    }
+     label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid rgb(189, 59, 33);
+      border-radius: 8px;
+    }
+    input[type="submit"] {
+      background-color: rgb(189, 59, 33);
+      color: rgb(201, 137, 34);
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    h2 {
+      color: rgb(189, 59, 33);
+    }
+    li {
+      color: rgb(201, 137, 34);
+      font-size: 15px;
+      font-weight: bold;
+    }
