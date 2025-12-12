@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Banneri */
+.banner {
+    width: 100%;
+    height: 250px;
+    background-image: url('kuvat/Kaivuri.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+
+    opacity: 0;
+    animation: fadein 2s ease-out forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobiili */
+@media (max-width: 600px) {
+    .banner {
+        height: 150px;
+    }
+
+    .banner-text {
+        font-size: 28px;
+    }
+}
+/* Modernin keltainen navbar */
+.navbar-yellow {
+    background-color: #f7c600; /* kirkas moderni keltainen */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* kevyt varjo moderniin lookiin */
+}
+
+/* Linkit */
+.navbar-yellow .nav-link {
+    color: #2c2c2c !important; /* tumma harmaa teksti */
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.navbar-yellow .nav-link:hover {
+    color: #000000 !important; /* hover vähän tummempi */
+}
+
+/* Navbarin brändi */
+.navbar-yellow .navbar-brand {
+    color: #000 !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.navbar-yellow .navbar-brand:hover {
+    color: #2c2c2c !important;
+}
+
+/* Hamburger-button */
+.navbar-yellow .navbar-toggler {
+    border-color: rgba(0,0,0,0.4);
+}
+
+.navbar-yellow .navbar-toggler-icon {
+    filter: invert(1); /* kääntää ikonista tumman, näkyy keltaista vasten */
+}
+
+/* Mobile padding reduktiot (modernimpi ulkoasu) */
+@media (max-width: 600px) {
+    .navbar-yellow .nav-link {
+        padding-left: 10px;
+    }
+}
+/* Moderni footer */
+.footer-section {
+    background-color: #1f1f1f;         /* tumma harmaa kontrastiksi */
+    color: #eaeaea;                    /* vaalea teksti */
+    padding: 40px 20px;
+    margin-top: 60px;                  /* pieni väli sisältöön */
+}
+
+.footer-section h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #f7c600;                    /* sama moderni keltainen kuin navbarissa */
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section hr {
+    border: none;
+    height: 1px;
+    background-color: #444;
+    margin: 20px 0;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;                    /* keskittää sisällön */
+    text-align: center;
+}
+
+.footer-section .copyright {
+    font-size: 14px;
+    color: #bcbcbc;
+}
+
+/* Mobiili */
+@media (max-width: 600px) {
+    .footer-section {
+        padding: 30px 15px;
+    }
+}
+/* Kaluston kuvakortit */
+.equipment-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.equipment-wrap img {
+    width: 100%;
+    height: 280px;         /* voit halutessasi muuttaa */
+    object-fit: cover;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Hover tummentaa kuvan hieman */
+.equipment-wrap:hover img {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+
+/* Teksti kuvan päällä */
+.equipment-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.equipment-wrap:hover .equipment-info {
+    opacity: 1;
+}
+
+.equipment-info h3 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.6);
+}
+.kalusto-intro h2 {
+    font-family: "Playfair Display", serif;
+}
+
+.kalusto-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+/* Taustalaatikko kalustoteksteille */
+.kalusto-box {
+    background: #fff8d1; /* pehmeä keltainen (teemaan sopiva) */
+    border-left: 6px solid #f7c600;
+    padding: 40px 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Tekstin maksimileveys */
+.kalusto-intro p {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.kalusto-intro h2 {
+    font-family: "Playfair Display", serif;
+}
