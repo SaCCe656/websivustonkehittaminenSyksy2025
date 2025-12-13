@@ -283,3 +283,71 @@ body {
     opacity: 0.8;
 }
 
+/* Carousel container */
+#carouselExample {
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* pehmeä varjo */
+    background-color: #1a1a1a; /* tummanharmaa tausta */
+}
+
+/* Carousel images */
+#carouselExample .carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Carousel controls (nuolet) */
+#carouselExample .carousel-control-prev-icon,
+#carouselExample .carousel-control-next-icon {
+    background-color: #f5a623; /* oranssi nuoli */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s;
+}
+
+#carouselExample .carousel-control-prev:hover,
+#carouselExample .carousel-control-next:hover {
+    background-color: #ff7f50; /* kirkkaampi oranssi hover-efektissä */
+}
+
+/* Carousel indicators (dotit) */
+#carouselExample .carousel-indicators button {
+    background-color: #f5a623; /* oranssi */
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+#carouselExample .carousel-indicators button:hover {
+    opacity: 1;
+}
+
+#carouselExample .carousel-indicators .active {
+    background-color: #ff7f50; /* aktiivinen piste kirkkaampi */
+}
+
+/* Carousel captions */
+#carouselExample .carousel-caption {
+    background: rgba(26, 26, 26, 0.7); /* tumma läpikuultava tausta */
+    padding: 15px 20px;
+    border-radius: 10px;
+    bottom: 20px;
+}
+
+#carouselExample .carousel-caption h5 {
+    color: #f5a623; /* oranssi otsikko */
+    font-size: 1.5rem;
+}
+
+#carouselExample .carousel-caption p {
+    color: #ddd; /* vaalea teksti */
+    font-size: 1rem;
+}
