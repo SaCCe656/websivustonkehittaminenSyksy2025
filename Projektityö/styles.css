@@ -1,15 +1,9 @@
-/* =====================================================
-   PERUSASETUKSET
-   ===================================================== */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-
-/* =====================================================
-   BANNERI
-   ===================================================== */
 .banner {
     width: 100%;
     height: 250px;
@@ -33,7 +27,6 @@ body {
     animation: fadein 2s ease-out forwards;
 }
 
-/* Bannerin animaatio */
 @keyframes fadein {
     from {
         opacity: 0;
@@ -45,7 +38,7 @@ body {
     }
 }
 
-/* Banneri mobiilissa */
+
 @media (max-width: 600px) {
     .banner {
         height: 150px;
@@ -56,16 +49,11 @@ body {
     }
 }
 
-
-/* =====================================================
-   NAVBAR (MODERNI KELTAINEN)
-   ===================================================== */
 .navbar-yellow {
     background-color: #f7c600;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-/* Navbar linkit */
 .navbar-yellow .nav-link {
     color: #2c2c2c !important;
     font-weight: 600;
@@ -76,7 +64,7 @@ body {
     color: #000000 !important;
 }
 
-/* Navbar brändi */
+
 .navbar-yellow .navbar-brand {
     color: #000 !important;
     font-weight: 700;
@@ -87,7 +75,7 @@ body {
     color: #2c2c2c !important;
 }
 
-/* Hamburger-painike */
+
 .navbar-yellow .navbar-toggler {
     border-color: rgba(0,0,0,0.4);
 }
@@ -96,7 +84,7 @@ body {
     filter: invert(1);
 }
 
-/* Navbar mobiilissa */
+
 @media (max-width: 600px) {
     .navbar-yellow .nav-link {
         padding-left: 10px;
@@ -104,9 +92,6 @@ body {
 }
 
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
 .footer-section {
     background-color: #1f1f1f;
     color: #eaeaea;
@@ -143,7 +128,7 @@ body {
     color: #bcbcbc;
 }
 
-/* Footer mobiilissa */
+
 @media (max-width: 600px) {
     .footer-section {
         padding: 30px 15px;
@@ -151,9 +136,6 @@ body {
 }
 
 
-/* =====================================================
-   KALUSTO – KUVAKORTIT
-   ===================================================== */
 .equipment-wrap {
     position: relative;
     overflow: hidden;
@@ -197,9 +179,6 @@ body {
 }
 
 
-/* =====================================================
-   YLEISET TEEMALAATIKOT (kalusto, yritys, yhteys, hinnasto)
-   ===================================================== */
 .kalusto-box,
 .yritys-box,
 .yhteys-box,
@@ -212,9 +191,6 @@ body {
 }
 
 
-/* =====================================================
-   TEKSTIT JA OTSIKOT
-   ===================================================== */
 .kalusto-intro p,
 .yritys-intro p {
     max-width: 900px;
@@ -230,9 +206,7 @@ body {
 }
 
 
-/* =====================================================
-   YHTEYDENOTTOLOMAKE
-   ===================================================== */
+
 .form-control {
     border-radius: 10px;
     padding: 12px;
@@ -255,9 +229,6 @@ body {
 }
 
 
-/* =====================================================
-   HINNASTO
-   ===================================================== */
 .hinnasto-table {
     background-color: #ffffff;
     border-radius: 12px;
@@ -283,17 +254,16 @@ body {
     opacity: 0.8;
 }
 
-/* Carousel container */
+
 #carouselExample {
     max-width: 900px;
     margin: 40px auto;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* pehmeä varjo */
-    background-color: #1a1a1a; /* tummanharmaa tausta */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+    background-color: #1a1a1a; 
 }
 
-/* Carousel images */
 #carouselExample .carousel-inner img {
     width: 100%;
     height: 500px;
@@ -301,10 +271,10 @@ body {
     border-radius: 15px;
 }
 
-/* Carousel controls (nuolet) */
+
 #carouselExample .carousel-control-prev-icon,
 #carouselExample .carousel-control-next-icon {
-    background-color: #f5a623; /* oranssi nuoli */
+    background-color: #f5a623; 
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -313,12 +283,12 @@ body {
 
 #carouselExample .carousel-control-prev:hover,
 #carouselExample .carousel-control-next:hover {
-    background-color: #ff7f50; /* kirkkaampi oranssi hover-efektissä */
+    background-color: #ff7f50; 
 }
 
-/* Carousel indicators (dotit) */
+
 #carouselExample .carousel-indicators button {
-    background-color: #f5a623; /* oranssi */
+    background-color: #f5a623; 
     border-radius: 50%;
     width: 12px;
     height: 12px;
@@ -331,23 +301,22 @@ body {
 }
 
 #carouselExample .carousel-indicators .active {
-    background-color: #ff7f50; /* aktiivinen piste kirkkaampi */
+    background-color: #ff7f50; 
 }
 
-/* Carousel captions */
 #carouselExample .carousel-caption {
-    background: rgba(26, 26, 26, 0.7); /* tumma läpikuultava tausta */
+    background: rgba(26, 26, 26, 0.7); 
     padding: 15px 20px;
     border-radius: 10px;
     bottom: 20px;
 }
 
 #carouselExample .carousel-caption h5 {
-    color: #f5a623; /* oranssi otsikko */
+    color: #f5a623; 
     font-size: 1.5rem;
 }
 
 #carouselExample .carousel-caption p {
-    color: #ddd; /* vaalea teksti */
+    color: #ddd; 
     font-size: 1rem;
 }
